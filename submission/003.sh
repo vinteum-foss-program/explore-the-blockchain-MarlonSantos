@@ -32,17 +32,18 @@ countNewOutputs() {
     #   echo "  Erro ao obter detalhes da transação $txid." >&2
     # fi
   done
-  echo "    O número total de outputs no bloco $blockHeight é: $totalOutputs."
+#   echo "    O número total de outputs no bloco $blockHeight é: $totalOutputs."
+  echo "$totalOutputs"
 }
 
-echo "Questão 03:"
-echo ""
-echo "  How many new outputs were created by block 123,456?"
-echo ""
-echo "Obs.: Dependendo do tamanho do bloco, o precessamento pode demorar bastante."
-echo "Por favor, aguarde..."
-echo ""
-echo "  Resposta:"
-echo ""
+# echo "Questão 03:"
+# echo ""
+# echo "  How many new outputs were created by block 123,456?"
+# echo ""
+# echo "Obs.: Dependendo do tamanho do bloco, o precessamento pode demorar bastante."
+# echo "Por favor, aguarde..."
+# echo ""
+# echo "  Resposta:"
+# echo ""
 blockHeight=123456
 countNewOutputs "$blockHeight"

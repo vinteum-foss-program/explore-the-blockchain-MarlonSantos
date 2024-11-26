@@ -35,16 +35,17 @@ calcularEnderecoTaproot() {
     echo "      Resultado bruto: $resultado" >&2
     exit 1
   fi
-  echo "    Endereço Taproot derivado: $endereco"
+#   echo "    Endereço Taproot derivado: $endereco"
+  echo "$endereco"
 }
 
-echo "Questão 04:"
-echo ""
-echo "  Using descriptors, compute the taproot address at index 100 derived from this extended public key:"
-echo "    xpub6Cx5tvq6nACSLJdra1A6WjqTo1SgeUZRFqsX5ysEtVBMwhCCRa4kfgFqaT2o1kwL3esB1PsYr3CUdfRZYfLHJunNWUABKftK2NjHUtzDms2"
-echo ""
-echo "  Resposta:"
-echo ""
+# echo "Questão 04:"
+# echo ""
+# echo "  Using descriptors, compute the taproot address at index 100 derived from this extended public key:"
+# echo "    xpub6Cx5tvq6nACSLJdra1A6WjqTo1SgeUZRFqsX5ysEtVBMwhCCRa4kfgFqaT2o1kwL3esB1PsYr3CUdfRZYfLHJunNWUABKftK2NjHUtzDms2"
+# echo ""
+# echo "  Resposta:"
+# echo ""
 xpub="xpub6Cx5tvq6nACSLJdra1A6WjqTo1SgeUZRFqsX5ysEtVBMwhCCRa4kfgFqaT2o1kwL3esB1PsYr3CUdfRZYfLHJunNWUABKftK2NjHUtzDms2"
 indice=100
 calcularEnderecoTaproot "$xpub" "$indice"
